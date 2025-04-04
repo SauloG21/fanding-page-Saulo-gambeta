@@ -37,4 +37,3 @@ function showProjects(data){
 getProjects ()
 
 
-//1 10 08
