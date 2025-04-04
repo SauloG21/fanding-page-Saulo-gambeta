@@ -1,0 +1,283 @@
+
+
+/*----------------------------------------------------ELEMENTOS DO HEADER (PRIMEIRO)-----------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIAVEIS DE COR*/
+:root{
+    --white1: #fff;
+    --white2: #050d52;
+    --white3: #00790a;
+    --white4: #003627;
+    --white5: #003526;
+    --white6: #e4e4e4;
+    --white7: #00ff15;
+    --white8: #00ca11;
+}
+
+/*SCROOL*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--white2);
+}
+    /*SCROOL*/
+
+
+body{
+    background-color: #002017;
+    height: 100vh;
+    font-family: 'lato';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--white4);
+    min-height: 50px;
+
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white1);
+}
+
+.nav-links:hover{
+    color: var(--white6);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button,.link-action){
+    padding: .5rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white1);
+    color: var(--white1);
+}
+
+.btn-action:hover{
+    background-color: var(--white3);
+    border: 1px solid var(--white3);
+}
+
+/*----------------------------------------------------ELEMENTOS CENTRAIS-----------------------------------*/
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white1);
+    letter-spacing: 8px;
+}
+
+strong{
+    color: var(--white7);
+}
+
+.first-section P{
+    color: var(--white1);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+/*Primeira foto minha*/
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 10%;
+    width: 105%;
+}
+
+/*Experiencias*/
+                                        /*Esse .fourth-section já é dos projetos*/
+
+:is(.second-section,.fourth-section){  
+    background-color: var(--white4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
+}
+
+.second-section ul li{
+    color: var(--white7);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.second-section ul li:hover{
+    color: var(--white8);
+    transition: .4s;
+    cursor: default;
+}
+
+.title{
+    color: #e4e4e4;
+}
+
+/*-------------------Quem sou eu??--------------*/
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*-------------------SEGUNDA IMAGEM--------------*/
+
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    max-width: 700px;
+    color: var(--white1);
+    text-align: justify;
+}
+
+/*----------------RODAPÉ CONTATOS-----------------*/
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;   
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* CÓDIGO PARA DECORAR NA PARTE DOS PROJETOS
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--white7);
+}
+
+#my-projects-list a:hover{
+    color: var(--white8);
+    transition: .4s;
+    cursor: pointer;
+}
+*/
+
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--white8);
+}
